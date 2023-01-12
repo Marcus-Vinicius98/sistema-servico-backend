@@ -1,5 +1,6 @@
 package com.api.backend.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import jakarta.persistence.Entity;
@@ -12,7 +13,9 @@ import jakarta.persistence.TemporalType;
 
 @Entity
 @Table(name = "db_servico")
-public class Servico {
+public class Servico  implements Serializable{
+
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
