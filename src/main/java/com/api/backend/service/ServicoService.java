@@ -7,8 +7,10 @@ import com.api.backend.repository.ServicoRepository;
 
 @Service
 public class ServicoService {
-	
+
 	@Autowired
 	private ServicoRepository repository;
+
+	
 
 }
